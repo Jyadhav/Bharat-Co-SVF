@@ -1,0 +1,100 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Visit Form</title>
+
+<link rel="stylesheet" href="Form.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo-container">
+        <img src="Logo Bharat Co.png" alt="Bharat & Co Logo">
+    </div>
+
+    <h2>Site Visit Form</h2>
+
+    <form id="siteVisitForm">
+
+        <div class="row">
+            <div class="form-group">
+                <label>Project Name</label>
+                <select id="project" required>
+                    <option value="">Select Project</option>
+                    <option>Poddar Harmony</option>
+                    <option>Legend</option>
+                    <option>Rising 58</option>
+                    <option>Samarth Aura</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Date of Visit</label>
+                <input type="date" id="visitDate" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Customer Name</label>
+                <input type="text" id="customer" placeholder="Enter Name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="tel" id="mobile" placeholder="Enter Mobile Number" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+
+            <div class="form-group">
+                <label>Occupation</label>
+                <input type="text" id="occupation" placeholder="Occupation">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Budget (In Lacs)</label>
+                <input type="number" id="budget" placeholder="Budget">
+            </div>
+
+            <div class="form-group">
+                <label>Configuration Interested</label>
+                <select id="configuration">
+                    <option>1 BHK</option>
+                    <option>2 BHK</option>
+                    <option>3 BHK</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <textarea id="address" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Remarks</label>
+            <textarea id="remarks" rows="4" placeholder="Enter Remarks"></textarea>
+        </div>
+
+        <button type="submit">Submit Site Visit</button>
+
+    </form>
+
+</div>
+
+<script src="Form.js"></script>
+
+</body>
+</html>
